@@ -1,0 +1,358 @@
+/*----------全体の設定----------*/
+body{
+	background-color: #71C7D4;
+	font-family: sans-serif,"MSゴシック";
+	height: 100%;
+	font-size: 11px;
+}
+input{
+	border:none;
+
+}
+.clearfix:after {
+  	content: ".";  
+  	display: block;  
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+  	min-height: 1px;
+}
+p{
+	text-align: center;
+}
+/*iPhoneなどでの角丸になる現象を直す*/
+input[type="button"],input[type="text"],input[type="submit"] {
+   -webkit-appearance: none;
+   border-radius: 0;
+}
+/*button*/
+.button {
+	position: relative;
+	background-color: #1abc9c;
+	border-radius: 4px !important;
+	color: #fff;
+	-webkit-transition: none;
+	transition: none;
+	box-shadow: 0 3px 0 #0e8c73;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+.button:hover {
+	background-color: #31c8aa;
+	box-shadow: 0 3px 0 #23a188;
+}
+.button:active {
+	top: 3px;
+	box-shadow: none;
+}
+
+/*----------トップページ----------*/
+
+
+
+
+/*----------教科書部分----------*/
+
+
+/*---header---*/
+header{
+	width: 100%;
+	height: 60px;
+	background-color: rgba(255,255,255,1);
+}
+.header_inner{
+	width: 90%;
+	height: 60px;
+	margin: 0 auto;
+	line-height: 60px;
+
+
+}
+#header_logo{
+	width: 250px;
+	display: block;
+	float: left;
+	position: relative;
+	top: 15px;
+}
+.header_inner p{
+	float: right;
+	font-size: 15px;
+	display: block;
+}
+
+
+/*---contents---*/
+@media screen and (min-width: 1025px){
+	.wrapper{
+		width: 1000px;
+		height: 100%;
+		margin: 0px auto 0;
+
+	}
+	.header_inner{
+		width: 1000px;
+		height: 60px;
+		margin: 0 auto;
+		line-height: 60px;
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 1024px){
+	.wrapper{
+		width: 800px;
+		height: 100%;
+		margin: 0px auto 0;
+	}
+	p{
+		font-size: 9px;
+	}
+	.header_inner{
+		width: 800px;
+		height: 60px;
+		margin: 0 auto;
+		line-height: 60px;
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 800px){
+	.wrapper{
+		width: 600px;
+		height: 100%;
+		margin: 0px auto 0;
+	}
+	p{
+		font-size: 5px;
+	}
+	.header_inner{
+		width: 600px;
+		height: 60px;
+		margin: 0 auto;
+		line-height: 60px;
+		font-size: 25px;
+	}
+	.key_right{
+		width: 15%;
+		height: 150px;
+		float: right;
+		margin-right: 8% !important;
+	}
+}
+@media screen and (max-width: 600px){
+	.wrapper{
+		width: 480px;
+		height: 100%;
+		margin: 0px auto 0;
+	}
+	.howto p{
+		display: none !important;
+	}
+	.header_inner{
+		width: 480px;
+		height: 60px;
+		margin: 0 auto;
+		line-height: 60px;
+		font-size: 25px;
+	}
+	.key_right{
+		width: 15%;
+		height: 150px;
+		float: right;
+		margin-right: 5% !important;
+	}
+}
+@media screen and (max-width: 480px){
+	.wrapper{
+		width: 400px ;
+		margin: 0px auto 0;
+	}
+	.header_inner{
+		width: 400px;
+		height: 60px;
+		margin: 0 auto;
+		line-height: 60px;
+		font-size: 25px;
+	}
+	.howto p{
+		display: none !important; 
+		color: red;
+	}
+	.clearbtn{
+	width: 60px !important;
+	}
+}
+
+
+/*run_area*/
+#run_area{
+	width: 100%;
+	margin-top: 2%;
+
+}
+
+textarea{
+	border: none;
+	/*  Firefox, Chrome, Safari, Opera*/
+	resize: none !important;
+	padding:10px;
+	border-radius: 3px;
+}
+iframe{
+	width: 100%;
+	height: 350px;
+	background-color: #FFFFFF;
+	border:2px gray dashed ;
+	overflow: hidden !important;
+
+}
+/*html出力*/
+.html_code{
+	width: 75%;
+	float: left;
+	background-color: #CEF6E3;
+}
+
+#html_run{
+	margin-top: 20px;
+	
+
+}
+
+.run_button{
+	margin-left: 2%;
+	width: 18%;
+	height: 139px;
+	float: right;
+
+
+
+}
+/*js出力*/
+#Js_code{
+	margin:2% 0 0 0;
+	display: inherit;
+	float: left;
+	width: 75%;
+	background-color: #F5ECCE;
+}
+
+.Js_button{
+	width: 18%;
+	height: 139px;
+	line-height: 139px;
+	background-color: #fbb03b;
+	margin-left: 2%;
+	margin-top: 2%;
+	float: right;
+}
+.Js_button:hover{
+	background-color: #fbc067;
+	box-shadow: 0 3px 0 #23a188;
+}
+
+/*---btn_area---*/
+#btn_area{
+	width: 100%;
+
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+.smbtn{
+	width: 50px !important;
+	height: 50px !important;
+	line-height: 30px !important;
+	text-align: center !important; 
+	background-color: #58ACFA !important;
+}
+.contlv{
+	width: 50px !important;
+	height: 30px !important;
+	line-height: 30px !important;
+	text-align: center !important; 
+	background-color: #58ACFA !important;
+}
+.contlh{
+	width: 30px !important;
+	height: 50px !important;
+	line-height: 50px !important;
+	text-align: center !important; 
+	background-color: #58ACFA !important;
+}
+.tempbtn:hover{
+	background-color: #A9D0F5 !important;
+}
+.key_left{
+	float: left;
+	width: 75%;
+}
+.key_right{
+	width: 15%;
+	height: 150px;
+	float: right;
+	margin-right: 1%;
+	position: relative;
+}
+#up{
+	position: absolute;
+	left: 30px;
+
+}
+#down{
+	position: absolute;
+	left: 30px;
+	top: 80px;
+
+}
+#left{
+	position: absolute;
+	top: 30px;
+
+}
+#right{
+	position: absolute;
+	top: 30px;
+	left: 80px;
+
+}
+.clear{
+	float: right;
+}
+.clearbtn{
+	width: 100px !important;
+	height: 50px !important;
+	line-height: 50px !important;
+	text-align: center !important; 
+	background-color: #FA5858 !important;
+}
+
+
+
+/*---footer---*/
+#footer{
+	width: 100%;
+	height: 40px;
+	background-color: #04B4AE;
+
+
+
+}
+.footer_inner{
+	width: 90%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	margin: 0 auto;
+	color: #FFFFFF;
+
+}
+
+#output{
+	width: 1000px;
+	height: 20px;
+}
+
+
+
+
